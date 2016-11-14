@@ -1,4 +1,4 @@
-# 短信验证的按钮倒计时
+# Use Swift3.0 to achieve similar to the bottom of the WeChat alarm view
 
 
- ![短信倒计时](https://github.com/RamboLouis/LuSMSButton/blob/master/短信倒计时.gif)
+ ![类似微信底部弹框](https://github.com/RamboLouis/LuBottomAlertView/blob/master/底部弹框.gif)
