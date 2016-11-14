@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8EC06BEA46A0EB556C27CFCB /* Pods_LuBottomAlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE8FD53C088BDAD315A84CA /* Pods_LuBottomAlertView.framework */; };
+		C23762EF1DD9E88B00577027 /* LuBottomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23762EE1DD9E88B00577027 /* LuBottomAlertView.swift */; };
+		C23762F11DD9EB4100577027 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23762F01DD9EB4100577027 /* SnapKit.framework */; };
 		C27E44F61DD596330041AF80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E44F51DD596330041AF80 /* AppDelegate.swift */; };
 		C27E44F81DD596330041AF80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E44F71DD596330041AF80 /* ViewController.swift */; };
 		C27E44FB1DD596330041AF80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27E44F91DD596330041AF80 /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2559575F260F7B3538419F48 /* Pods-LuBottomAlertView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuBottomAlertView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LuBottomAlertView/Pods-LuBottomAlertView.debug.xcconfig"; sourceTree = "<group>"; };
+		C23762EE1DD9E88B00577027 /* LuBottomAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LuBottomAlertView.swift; sourceTree = "<group>"; };
+		C23762F01DD9EB4100577027 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = "../../../../Library/Developer/Xcode/DerivedData/LuBottomAlertView-gstyostipsjbagezmumekscoyttf/Build/Products/Debug-iphoneos/SnapKit/SnapKit.framework"; sourceTree = "<group>"; };
 		C27E44F21DD596330041AF80 /* LuBottomAlertView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuBottomAlertView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C27E44F51DD596330041AF80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C27E44F71DD596330041AF80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		C27E44FC1DD596330041AF80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C27E44FF1DD596330041AF80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C27E45011DD596330041AF80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBE8FD53C088BDAD315A84CA /* Pods_LuBottomAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuBottomAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDE6CF69E06D1EA9D36C6C35 /* Pods-LuBottomAlertView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuBottomAlertView.release.xcconfig"; path = "Pods/Target Support Files/Pods-LuBottomAlertView/Pods-LuBottomAlertView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C23762F11DD9EB4100577027 /* SnapKit.framework in Frameworks */,
+				8EC06BEA46A0EB556C27CFCB /* Pods_LuBottomAlertView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		117D619FB1BD9F07FEAA660A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2559575F260F7B3538419F48 /* Pods-LuBottomAlertView.debug.xcconfig */,
+				EDE6CF69E06D1EA9D36C6C35 /* Pods-LuBottomAlertView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		86702FDFF8568FC940C4AD03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C23762F01DD9EB4100577027 /* SnapKit.framework */,
+				DBE8FD53C088BDAD315A84CA /* Pods_LuBottomAlertView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C27E44E91DD596330041AF80 = {
 			isa = PBXGroup;
 			children = (
 				C27E44F41DD596330041AF80 /* LuBottomAlertView */,
 				C27E44F31DD596330041AF80 /* Products */,
+				117D619FB1BD9F07FEAA660A /* Pods */,
+				86702FDFF8568FC940C4AD03 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +86,7 @@
 			children = (
 				C27E44F51DD596330041AF80 /* AppDelegate.swift */,
 				C27E44F71DD596330041AF80 /* ViewController.swift */,
+				C23762EE1DD9E88B00577027 /* LuBottomAlertView.swift */,
 				C27E44F91DD596330041AF80 /* Main.storyboard */,
 				C27E44FC1DD596330041AF80 /* Assets.xcassets */,
 				C27E44FE1DD596330041AF80 /* LaunchScreen.storyboard */,
@@ -71,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C27E45041DD596330041AF80 /* Build configuration list for PBXNativeTarget "LuBottomAlertView" */;
 			buildPhases = (
+				51C0FDBB5A43B921A45D675E /* [CP] Check Pods Manifest.lock */,
 				C27E44EE1DD596330041AF80 /* Sources */,
 				C27E44EF1DD596330041AF80 /* Frameworks */,
 				C27E44F01DD596330041AF80 /* Resources */,
+				F22BC59DD893F2D172334950 /* [CP] Embed Pods Frameworks */,
+				D2BE8F92575AB0C3E512DAB0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,12 +166,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		51C0FDBB5A43B921A45D675E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D2BE8F92575AB0C3E512DAB0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LuBottomAlertView/Pods-LuBottomAlertView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F22BC59DD893F2D172334950 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LuBottomAlertView/Pods-LuBottomAlertView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C27E44EE1DD596330041AF80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C27E44F81DD596330041AF80 /* ViewController.swift in Sources */,
+				C23762EF1DD9E88B00577027 /* LuBottomAlertView.swift in Sources */,
 				C27E44F61DD596330041AF80 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +340,7 @@
 		};
 		C27E45051DD596330041AF80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2559575F260F7B3538419F48 /* Pods-LuBottomAlertView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2AS8FW5X2H;
@@ -270,6 +354,7 @@
 		};
 		C27E45061DD596330041AF80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDE6CF69E06D1EA9D36C6C35 /* Pods-LuBottomAlertView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2AS8FW5X2H;
@@ -300,6 +385,7 @@
 				C27E45061DD596330041AF80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
