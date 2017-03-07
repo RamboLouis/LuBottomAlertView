@@ -130,7 +130,7 @@
 				TargetAttributes = {
 					C27E44F11DD596330041AF80 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 2AS8FW5X2H;
+						DevelopmentTeam = CVC96E4QGN;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -343,7 +343,7 @@
 			baseConfigurationReference = 2559575F260F7B3538419F48 /* Pods-LuBottomAlertView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2AS8FW5X2H;
+				DEVELOPMENT_TEAM = CVC96E4QGN;
 				INFOPLIST_FILE = LuBottomAlertView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RamboLu.LuBottomAlertView;
@@ -357,7 +357,7 @@
 			baseConfigurationReference = EDE6CF69E06D1EA9D36C6C35 /* Pods-LuBottomAlertView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2AS8FW5X2H;
+				DEVELOPMENT_TEAM = CVC96E4QGN;
 				INFOPLIST_FILE = LuBottomAlertView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RamboLu.LuBottomAlertView;

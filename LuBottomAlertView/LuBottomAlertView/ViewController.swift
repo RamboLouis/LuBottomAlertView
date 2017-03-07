@@ -26,7 +26,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         view.addSubview(testTableView)
         testTableView.snp.makeConstraints { (make) in
             make.left.right.top.bottom.equalToSuperview()
@@ -62,7 +61,9 @@ extension ViewController{
             })
             break
         case 2:
-            
+            LuBottomAlertView().showBottomDatePickerView{ (num) in
+                debugPrint("返回年龄数值：\(num!)")
+            }
             break
         default:
             break
