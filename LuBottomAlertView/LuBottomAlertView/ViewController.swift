@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
@@ -46,16 +47,17 @@ extension ViewController{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
         debugPrint("\(indexPath)")
         switch indexPath.row {
         case 0:
-            let str = ["0","测试测试测试","测试测试测试"]
+            let str = ["0","测试测试测试1","测试测试测试2","测试测试测试3","测试测试测试4"]
             LuBottomAlertView().showBottomTableView(indexTextArr: str, bottomAction: { (num) in
                 debugPrint("所选角标:\(num!)")
             })
             break
         case 1:
-            let str = ["1","测试测试测试","测试测试测试"]
+            let str = ["1","测试标题","测试测试测试"]
             LuBottomAlertView().showBottomTableView(indexTextArr: str, bottomAction: { (num) in
                 debugPrint("所选角标:\(num!)")
             })

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SnapKit
 
 let buttonAlertIdentifier = "buttonAlertIdentifier"
 
@@ -19,7 +18,7 @@ enum showAlertType : Int {
 typealias IndexPathNumBlock = (_ IndexPathNum:Int?)->Void
 
 class LuBottomAlertView: UIViewController,UITableViewDelegate,UITableViewDataSource{
-
+    
     fileprivate var indexPathNumBlock     : IndexPathNumBlock?
     
     fileprivate var strongSelf            : UIViewController?
@@ -86,6 +85,13 @@ class LuBottomAlertView: UIViewController,UITableViewDelegate,UITableViewDataSou
         }
     }
     
+    deinit {
+        debugPrint("销毁:\(self.classForCoder)控制器")
+    }
+}
+
+extension LuBottomAlertView{
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         switch alertType {
         case 0 :
@@ -104,9 +110,6 @@ class LuBottomAlertView: UIViewController,UITableViewDelegate,UITableViewDataSou
         strongSelf = nil
     }
     
-    deinit {
-        debugPrint("销毁:\(self.classForCoder)控制器")
-    }
 }
 
 // MARK: - 底部弹出时间轴
@@ -165,9 +168,9 @@ extension LuBottomAlertView{
         let height:CGFloat = ((UIScreen.main.bounds.height/1334) * 100)*CGFloat(indexText.count)+((UIScreen.main.bounds.height/1334) * 10)
         bottomAlertTableView.frame = CGRect(x: 0, y: UIScreen.main.bounds.height, width: UIScreen.main.bounds.width, height: height)
         bottomAlertTableView.isScrollEnabled = false
-        bottomAlertTableView.separatorStyle = .none
-        bottomAlertTableView.delegate = self
-        bottomAlertTableView.dataSource = self
+        bottomAlertTableView.separatorStyle  = .none
+        bottomAlertTableView.delegate        = self
+        bottomAlertTableView.dataSource      = self
         bottomAlertTableView.register(bottomAlertCell.self, forCellReuseIdentifier: buttonAlertIdentifier)
         view.addSubview(bottomAlertTableView)
     }
@@ -193,7 +196,7 @@ extension LuBottomAlertView{
                     cell.alertName.text      = indexText[1]
                     cell.alertName.font      = UIFont.systemFont(ofSize: 15)
                     cell.alertName.textColor = UIColor.colorWithString("#888888")
-                    cell.selectionStyle = .none
+                    cell.selectionStyle      = .none
                 }else if indexPath.row == 1 {
                     cell.alertName.text      = indexText[2]
                     cell.alertName.font      = UIFont.systemFont(ofSize: 18)
@@ -206,8 +209,7 @@ extension LuBottomAlertView{
         }else{
             cell.alertName.text = "取消"
         }
-        
-        let section = tableView.numberOfSections - indexText.count + 1
+        let section = tableView.numberOfSections - 2
         debugPrint("弹出的section数:\(section)")
         let row = tableView.numberOfRows(inSection: section) - 1
         debugPrint("弹出的row数:\(row)")
