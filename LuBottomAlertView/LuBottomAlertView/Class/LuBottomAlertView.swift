@@ -127,12 +127,8 @@ extension LuBottomAlertView{
         view.addSubview(bottomAlertDatePicker)
         let  line = UIView()
         line.backgroundColor = UIColor.colorWithString("#d9d9d9")
+        line.frame = CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height/1334 * 1)
         bottomAlertDatePicker.addSubview(line)
-        
-        line.snp.makeConstraints { (make) in
-            make.top.left.right.equalTo(bottomAlertDatePicker)
-            make.height.equalTo(UIScreen.main.bounds.height/1334 * 1)
-        }
     }
     
     @objc
@@ -221,7 +217,7 @@ extension LuBottomAlertView{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return (UIScreen.main.bounds.height/1334) * 100
+        return UIScreen.main.bounds.height/1334 * 100
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -303,17 +299,12 @@ class bottomAlertCell: UITableViewCell {
     }
     
     func setUI(){
+        alertName.textAlignment = .center
+        alertName.frame = CGRect.init(x: UIScreen.main.bounds.width / 2 - UIScreen.main.bounds.width / 750 * 200, y: contentView.frame.size.height / 2 - UIScreen.main.bounds.height / 1334 * 10, width: UIScreen.main.bounds.width / 750 * 400, height: UIScreen.main.bounds.height / 1334 * 40)
+        
         contentView.addSubview(alertName)
+        lineIcon.frame = CGRect.init(x: 0, y: UIScreen.main.bounds.height/1334 * 99, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height/1334 * 1)
         contentView.addSubview(lineIcon)
-        
-        alertName.snp.makeConstraints { (make) in
-            make.center.equalToSuperview()
-        }
-        
-        lineIcon.snp.makeConstraints { (make) in
-            make.left.right.bottom.equalToSuperview()
-            make.height.equalTo(UIScreen.main.bounds.height/1334 * 1)
-        }
     }
 }
 extension UIColor{
