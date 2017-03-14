@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		528697321E76A7530082FC5F /* LuBottomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528697311E76A7530082FC5F /* LuBottomAlertView.swift */; };
+		522D7A9C1E777B1B00A69488 /* LuBottomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D7A9B1E777B1B00A69488 /* LuBottomAlertView.swift */; };
 		8EC06BEA46A0EB556C27CFCB /* Pods_LuBottomAlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE8FD53C088BDAD315A84CA /* Pods_LuBottomAlertView.framework */; };
 		C23762F11DD9EB4100577027 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23762F01DD9EB4100577027 /* SnapKit.framework */; };
 		C27E44F61DD596330041AF80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E44F51DD596330041AF80 /* AppDelegate.swift */; };
@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		2559575F260F7B3538419F48 /* Pods-LuBottomAlertView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuBottomAlertView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LuBottomAlertView/Pods-LuBottomAlertView.debug.xcconfig"; sourceTree = "<group>"; };
-		528697311E76A7530082FC5F /* LuBottomAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LuBottomAlertView.swift; sourceTree = "<group>"; };
+		522D7A9B1E777B1B00A69488 /* LuBottomAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LuBottomAlertView.swift; sourceTree = "<group>"; };
 		C23762F01DD9EB4100577027 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = "../../../../Library/Developer/Xcode/DerivedData/LuBottomAlertView-gstyostipsjbagezmumekscoyttf/Build/Products/Debug-iphoneos/SnapKit/SnapKit.framework"; sourceTree = "<group>"; };
 		C27E44F21DD596330041AF80 /* LuBottomAlertView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuBottomAlertView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C27E44F51DD596330041AF80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,14 +54,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		528697301E76A7530082FC5F /* Class */ = {
-			isa = PBXGroup;
-			children = (
-				528697311E76A7530082FC5F /* LuBottomAlertView.swift */,
-			);
-			path = Class;
-			sourceTree = "<group>";
-		};
 		86702FDFF8568FC940C4AD03 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,7 +84,7 @@
 		C27E44F41DD596330041AF80 /* LuBottomAlertView */ = {
 			isa = PBXGroup;
 			children = (
-				528697301E76A7530082FC5F /* Class */,
+				522D7A9B1E777B1B00A69488 /* LuBottomAlertView.swift */,
 				C27E44F51DD596330041AF80 /* AppDelegate.swift */,
 				C27E44F71DD596330041AF80 /* ViewController.swift */,
 				C27E44F91DD596330041AF80 /* Main.storyboard */,
@@ -228,8 +220,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C27E44F81DD596330041AF80 /* ViewController.swift in Sources */,
+				522D7A9C1E777B1B00A69488 /* LuBottomAlertView.swift in Sources */,
 				C27E44F61DD596330041AF80 /* AppDelegate.swift in Sources */,
-				528697321E76A7530082FC5F /* LuBottomAlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
